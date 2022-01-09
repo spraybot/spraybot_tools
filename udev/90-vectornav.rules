@@ -1,0 +1,2 @@
+# Udev rule for the VectorNav
+SUBSYSTEMS=="usb", ATTRS{manufacturer}=="FTDI", ATTRS{idProduct}=="6001", SYMLINK+="vectornav vectornav_$attr{devpath}", MODE="0666"
