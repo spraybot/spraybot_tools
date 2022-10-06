@@ -1,0 +1,2 @@
+# Udev rule for the Battery CAN
+SUBSYSTEMS=="usb", DRIVERS="usb", ATTRS{idProduct}=="7523", ATTRS{idVendor}=="1a86", SYMLINK+="battery battery_$attr{devpath}", MODE="0666"
