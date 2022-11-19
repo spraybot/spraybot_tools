@@ -1,2 +1,2 @@
 # Udev rule for the Pico
-SUBSYSTEMS=="usb", ATTRS{manufacturer}=="Raspberry Pi", ATTRS{idProduct}=="000a", SYMLINK+="pico pico_$attr{devpath}", MODE="0777"
+SUBSYSTEMS=="usb", ATTRS{manufacturer}=="Arduino (www.arduino.cc)", ATTRS{idProduct}=="0043", SYMLINK+="pico pico_$attr{devpath}", MODE="0777"
